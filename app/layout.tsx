@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { poppins } from "./_ui/fonts";
 import "./globals.css";
+import Navbar from "@/components/cart/Navbar";
+import Container from "@/components/global/Container";
 
 export const metadata: Metadata = {
   title: "Chibi Store",
-  description: "An e-commerce platform built with Next.js, TypeScript, and Tailwind CSS",
+  description:
+    "An e-commerce platform built with Next.js, TypeScript, and Tailwind CSS",
 };
 
 export default function RootLayout({
@@ -14,10 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${poppins.className} antialiased`}
-      >
-        {children}
+      <body className={`${poppins.className} antialiased`}>
+        <Navbar />
+        <Container className="py-20">{children}</Container>
       </body>
     </html>
   );
