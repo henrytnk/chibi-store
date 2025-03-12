@@ -22,6 +22,6 @@ const Navbar = () => {
 };
 
 const containerStyle =
-  "flex flex-col flex-wrap gap-4 py-8 sm:flex-row sm:justify-between sm:items-center ";
+  "flex flex-col flex-wrap gap-4 py-8 sm:flex-row sm:justify-between sm:items-center";
 
 export default Navbar;
